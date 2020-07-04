@@ -1,0 +1,39 @@
+{
+    "name": "vfiber/battlefy-hungarian-r6-league-stat-plugin",
+    "type": "grav-plugin",
+    "description": "Battlefy.com Grav integracio",
+    "keywords": [
+        "plugin"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fibinger Adam",
+            "email": "vfiber@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "vfiber/tablegenerator": "*"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/VFiber/TableGenerator.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Grav\\Plugin\\BattlefyHungarianR6LeagueStatPlugin\\": "classes/"
+        },
+        "classmap": [
+            "battlefy-hungarian-r6-league-stat-plugin.php"
+        ]
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.3"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+name: Battlefy Hungarian R6 League Stat Plugin
+slug: battlefy-hungarian-r6-league-stat-plugin
+type: plugin
+version: 0.1.0
+description: Battlefy.com Grav integráció az eredmények rögzítésére
+icon: plug
+author:
+  name: Fibinger Ádám
+  email: vfiber@gmail.com
+homepage: https://github.com/VFiber/battlefy-hungarian-r6-league-stat-plugin
+demo: http://demo.yoursite.com
+keywords: grav, plugin, battlefy, table
+bugs: https://github.com/VFiber/battlefy-hungarian-r6-league-stat-plugin/issues
+docs: https://github.com/VFiber/battlefy-hungarian-r6-league-stat-plugin/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_BATTLEFY_HUNGARIAN_R6_LEAGUE_STAT_PLUGIN.TEXT_VARIABLE
+      help: PLUGIN_BATTLEFY_HUNGARIAN_R6_LEAGUE_STAT_PLUGIN.TEXT_VARIABLE_HELP
